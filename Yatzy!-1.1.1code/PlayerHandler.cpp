@@ -74,6 +74,7 @@ void PlayerHandler::addPlayers(const int nrOfPlayers, string names[])
 	}
 	else
 	{
+		delete[] players;
 		this->nrOfPlayers = nrOfPlayers;
 		this->players = new Player[nrOfPlayers];
 		for (int k = 0; k < nrOfPlayers; k++)
